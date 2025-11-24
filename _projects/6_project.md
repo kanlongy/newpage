@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Windy-NavRL - Wind-resilient RL Framework for UAV Navigation
-description: LSTM-PPO architecture for robust UAV navigation under wind disturbances
-img: assets/img/windy-navrl.jpg
+description: Transformer-PPO architecture for robust UAV navigation under wind disturbances
+img: assets/img/wdnavrl.gif
 importance: 4
 category: graduate
 github: https://github.com/kanlongy/Windy-NavRL
@@ -23,11 +23,11 @@ github: https://github.com/kanlongy/Windy-NavRL
 
 Autonomous UAV navigation in outdoor environments faces significant challenges from wind disturbances, which can cause trajectory deviations, increased energy consumption, and mission failure. This project develops a reinforcement learning framework that enables UAVs to learn wind-aware navigation policies.
 
-**Project Objective:** Implement LSTM-PPO architecture to improve UAV navigation robustness under challenging wind conditions.
+**Project Objective:** Implement Transformer-PPO architecture to improve UAV navigation robustness under challenging wind conditions.
 
 **Impact:** Contributes to safer autonomous drone operations for infrastructure inspection, search and rescue, and package delivery applications.
 
-**Keywords:** Reinforcement Learning, Deep Learning, UAV, Robotics, LSTM-PPO
+**Keywords:** Reinforcement Learning, Deep Learning, UAV, Robotics, Transformer-PPO
 
 ---
 
@@ -35,12 +35,12 @@ Autonomous UAV navigation in outdoor environments faces significant challenges f
 
 ### System Architecture
 
-Developed an enhanced LSTM-PPO architecture built on the NavRL framework:
+Developed an enhanced Transformer-PPO architecture built on the NavRL framework:
 
-**LSTM-PPO Agent:**
+**Transformer-PPO Agent:**
 
 - **Observation Space**: Position, velocity, goal vector, estimated wind velocity
-- **LSTM Layer**: Temporal memory to capture wind pattern history
+- **Transformer Layer**: Temporal memory to capture wind pattern history
 - **Policy Network**: Actor-critic architecture with shared feature extraction
 - **Wind Estimator**: Real-time wind velocity estimation from UAV dynamics
 
@@ -65,7 +65,7 @@ Implemented realistic wind simulation in both Gazebo and Isaac Sim:
 
 ## Results
 
-The wind-aware RL policy demonstrates improved navigation performance compared to traditional PID control and standard PPO approaches across various wind conditions. The LSTM component enables the policy to learn temporal wind patterns and adapt control strategies accordingly.
+The wind-aware RL policy demonstrates improved navigation performance compared to traditional PID control and standard PPO approaches across various wind conditions. The Transformer component enables the policy to learn temporal wind patterns and adapt control strategies accordingly.
 
 **Key Observations:**
 
@@ -85,7 +85,7 @@ The wind-aware RL policy demonstrates improved navigation performance compared t
 
 As the lead developer on this research project under Prof. Kenji Shimada's supervision, I:
 
-✓ Designed and implemented LSTM-PPO architecture with wind state estimation  
+✓ Designed and implemented Transformer-PPO architecture with wind state estimation  
 ✓ Developed realistic wind field models in Gazebo and Isaac Sim  
 ✓ Built distributed training infrastructure for parallel policy learning  
 ✓ Conducted experiments comparing different policy architectures  
@@ -98,11 +98,11 @@ As the lead developer on this research project under Prof. Kenji Shimada's super
 
 ## Conclusion
 
-This ongoing research project implements a wind-resilient RL framework for UAV navigation using LSTM-PPO architecture. The approach demonstrates improved robustness under wind disturbances through temporal modeling and wind-aware policy learning.
+This ongoing research project implements a wind-resilient RL framework for UAV navigation using Transformer-PPO architecture. The approach demonstrates improved robustness under wind disturbances through temporal modeling and wind-aware policy learning.
 
 **Key Achievements:**
 
-- LSTM-PPO architecture for wind-resilient navigation
+- Transformer-PPO architecture for wind-resilient navigation
 - Comprehensive wind simulation framework in Gazebo and Isaac Sim
 - Integration with CERLAB autonomy stack
 - Ongoing real-world deployment and validation

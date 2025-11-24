@@ -2,7 +2,7 @@
 layout: page
 title: DDPM-AFHQ - Denoising Diffusion Probabilistic Models
 description: End-to-end diffusion model implementation on AFHQ dataset
-img: assets/img/ddpm_forward.png
+img: assets/img/ddpm.gif
 importance: 3
 category: graduate
 github: https://github.com/kanlongy/DDPM_AFHQ.git

@@ -2,12 +2,18 @@
 layout: page
 title: Optimal Control and A* Path Planning for Autonomous Vehicles
 description: LQR-based trajectory tracking with dynamic path replanning
-img: assets/img/autonomous-vehicle.jpg
+img: assets/img/modern control.png
 importance: 6
 category: graduate
 ---
 
 ## Overview
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/modern control.png" title="Modern Control Project" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 **Period:** Aug. 2024 - Dec. 2024  
 **Institution:** Carnegie Mellon University  

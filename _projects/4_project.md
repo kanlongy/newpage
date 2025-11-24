@@ -2,7 +2,7 @@
 layout: page
 title: ORB-SLAM3 on Physical Robots using ROS2
 description: Modernized SLAM framework deployment on diverse robotic platforms
-img: assets/img/slam-robots.jpg
+img: assets/img/slam-robots.png
 importance: 5
 category: graduate
 ---
@@ -14,6 +14,9 @@ category: graduate
 **Location:** Pittsburgh, USA  
 **Type:** Course Project  
 **Role:** Project Member
+
+[📄 Project Report (PDF)](https://drive.google.com/file/d/1SrW-N_Q2jBnxN_CoO1KXNecIOp_9cbvR/view)
+[💻 GitHub Repository](https://github.com/gravesreid/SLAM_Course_Project.git)
 
 ---
 
@@ -46,3 +49,5 @@ This project focused on modernizing the ORB-SLAM3 framework for compatibility wi
 - Multi-platform Robot Deployment
 - Computer Vision
 - C++ Programming
+
+---

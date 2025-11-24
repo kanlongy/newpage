@@ -7,7 +7,7 @@ subtitle:
 profile:
   align: right
   image: me.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Pittsburgh, Pennsylvania</p>
     <p>Carnegie Mellon University</p>
@@ -29,7 +29,7 @@ latest_posts:
 
 Hi there! 你好呀! こんにちは!
 
-I'm **Kanlong Ye**, a Master's student in Mechanical Engineering (Robotics Track) at [Carnegie Mellon University](https://www.cmu.edu/), specializing in **Robotics and AI**. With a strong foundation in machine learning, deep learning, and generative AI, I am passionate about advancing intelligent robotic systems that can navigate and understand the physical world.
+I'm Kanlong Ye, a Master's student in Mechanical Engineering (Robotics Track) at [Carnegie Mellon University](https://www.cmu.edu/), specializing in **Robotics and AI**. With a strong foundation in machine learning, deep learning, and generative AI, I am passionate about advancing intelligent robotic systems that can navigate and understand the physical world.
 
 At CMU, my research lies at the intersection of machine learning and robotics. I work in the [Computational Engineering & Robotics Lab (CERLAB)](https://zhefanxu.com/uav_team/) under Professor [Kenji Shimada](https://www.meche.engineering.cmu.edu/directory/bios/shimada-kenji.html). I've built full UAV autonomy stacks from the ground up—both in simulation (Gazebo, Isaac Sim) and on physical platforms—integrating perception, planning, and control for robust autonomous navigation.
 

@@ -13,6 +13,6 @@ Successfully completed autonomous tunnel inspection demonstration for TOPRISE CO
         {% include figure.liquid loading="eager" path="assets/img/tunnel-inspection-site.jpg" title="On-site tunnel inspection" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tunnel-pc.jpg" title="Point cloud reconstruction" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tunnel pc.jpg" title="Point cloud reconstruction" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
