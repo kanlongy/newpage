@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Research projects, coursework, and personal explorations in robotics and AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/newpage/projects/";
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/newpage/cv/";
@@ -396,13 +396,23 @@ ninja.data = [{
           section: "News",},{id: "news-successfully-completed-autonomous-tunnel-inspection-demonstration-in-fukushima-japan-for-toprise-co-ltd-achieved-3d-reconstruction-with-accuracy-amp-lt-5cm",
           title: 'Successfully completed autonomous tunnel inspection demonstration in Fukushima, Japan for TOPRISE CO., LTD....',
           description: "",
-          section: "News",},{id: "news-paper-accepted-to-icra-2025-workshop-on-construction-robotics-adaptive-planning-framework-for-uav-based-surface-inspection-in-partially-unknown-indoor-environments",
+          section: "News",},{id: "news-autonomous-tunnel-inspection-in-fukushima-japan",
+          title: 'Autonomous Tunnel Inspection in Fukushima, Japan',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/newpage/news/announcement_6/";
+            },},{id: "news-paper-accepted-to-icra-2025-workshop-on-construction-robotics-adaptive-planning-framework-for-uav-based-surface-inspection-in-partially-unknown-indoor-environments",
           title: 'Paper accepted to ICRA 2025 Workshop on Construction Robotics! “Adaptive Planning Framework for...',
           description: "",
           section: "News",},{id: "news-delivered-production-uav-system-to-toprise-co-ltd-our-work-was-featured-on-japanese-national-television-rocket",
           title: 'Delivered production UAV system to TOPRISE CO., LTD. Our work was featured on...',
           description: "",
-          section: "News",},{id: "projects-assembly-mechanism-with-multi-dof-self-optimization",
+          section: "News",},{id: "news-production-uav-system-delivered-amp-featured-on-japanese-national-tv",
+          title: 'Production UAV System Delivered &amp;amp; Featured on Japanese National TV',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/newpage/news/announcement_7/";
+            },},{id: "projects-assembly-mechanism-with-multi-dof-self-optimization",
           title: 'Assembly Mechanism with Multi-DOF Self-Optimization',
           description: "Intelligent assembly system with sensor-based online monitoring",
           section: "Projects",handler: () => {
