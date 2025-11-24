@@ -394,8 +394,8 @@ ninja.data = [{
             },},{id: "news-paper-accepted-to-icra-2025-workshop-on-construction-robotics-adaptive-planning-framework-for-uav-based-surface-inspection-in-partially-unknown-indoor-environments",
           title: 'Paper accepted to ICRA 2025 Workshop on Construction Robotics! “Adaptive Planning Framework for...',
           description: "",
-          section: "News",},{id: "news-production-uav-system-delivered-amp-featured-on-japanese-national-tv",
-          title: 'Production UAV System Delivered &amp;amp; Featured on Japanese National TV',
+          section: "News",},{id: "news-production-uav-system-delivered-amp-featured-on-japanese-tv",
+          title: 'Production UAV System Delivered &amp;amp; Featured on Japanese TV',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/newpage/news/announcement_1/";
@@ -426,7 +426,7 @@ ninja.data = [{
               window.location.href = "/newpage/projects/5_project/";
             },},{id: "projects-windy-navrl-wind-resilient-rl-framework-for-uav-navigation",
           title: 'Windy-NavRL - Wind-resilient RL Framework for UAV Navigation',
-          description: "LSTM-PPO architecture for robust UAV navigation under wind disturbances",
+          description: "Transformer-PPO architecture for robust UAV navigation under wind disturbances",
           section: "Projects",handler: () => {
               window.location.href = "/newpage/projects/6_project/";
             },},{id: "projects-ddpm-afhq-denoising-diffusion-probabilistic-models",
