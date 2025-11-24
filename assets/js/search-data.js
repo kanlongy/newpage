@@ -18,17 +18,10 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Research projects, coursework, and personal explorations in robotics and AI.",
+          description: "Research projects and coursework in robotics and AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/newpage/projects/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/newpage/cv/";
           },
         },{id: "post-a-post-with-plotly-js",
         
