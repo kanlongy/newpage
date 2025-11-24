@@ -3,8 +3,8 @@ layout: page
 title: Optimal Control and A* Path Planning for Autonomous Vehicles
 description: LQR-based trajectory tracking with dynamic path replanning
 img: assets/img/autonomous-vehicle.jpg
-importance: 5
-category: coursework
+importance: 6
+category: graduate
 ---
 
 ## Overview

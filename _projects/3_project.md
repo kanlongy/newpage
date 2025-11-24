@@ -3,8 +3,8 @@ layout: page
 title: Solar Meridian Extraction via Underwater Polarization
 description: Bio-inspired navigation using polarization vision
 img: assets/img/research3.png
-importance: 3
-category: research
+importance: 1
+category: undergraduate
 ---
 
 ## Overview

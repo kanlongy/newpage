@@ -3,8 +3,8 @@ layout: page
 title: Windy-NavRL - Wind-resilient RL Framework for UAV Navigation
 description: LSTM-PPO architecture for robust UAV navigation under wind disturbances
 img: assets/img/windy-navrl.jpg
-importance: 6
-category: research
+importance: 4
+category: graduate
 github: https://github.com/kanlongy/Windy-NavRL
 ---
 

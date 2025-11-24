@@ -3,8 +3,8 @@ layout: page
 title: Pittsburgh RAG - Retrieval-Augmented Generation System
 description: Building a RAG system for Pittsburgh & CMU knowledge
 img: assets/img/pittsburgh-rag-overview.png
-importance: 9
-category: coursework
+importance: 1
+category: graduate
 github: https://github.com/kanlongy/Pittsbugrh-RAG.git
 pdf: https://drive.google.com/file/d/1tRV8AUEn1Guqk6ctFeHWvKgqcFcuuWwg/view?usp=sharing
 ---

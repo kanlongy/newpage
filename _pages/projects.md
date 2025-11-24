@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research projects, coursework, and personal explorations in robotics and AI.
+description: Research projects and coursework in robotics and AI.
 nav: true
 nav_order: 3
-display_categories: [research, coursework, personal]
+display_categories: [graduate, undergraduate]
 horizontal: false
 ---
 

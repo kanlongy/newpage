@@ -3,8 +3,8 @@ layout: page
 title: Build-LLAMA2 - Mini Transformer Implementation & WiSE-FT
 description: From-scratch Llama2 implementation with weight-space ensemble fine-tuning
 img: assets/img/llama2-architecture.png
-importance: 8
-category: coursework
+importance: 2
+category: graduate
 github: https://github.com/kanlongy/Build-LLAMA2
 pdf: https://drive.google.com/file/d/1d0xUome0oMwEkHppK_fJbjWf3CSJdlwE/view?usp=sharing
 ---

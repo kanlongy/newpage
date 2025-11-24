@@ -3,8 +3,8 @@ layout: page
 title: Assembly Mechanism with Multi-DOF Self-Optimization
 description: Intelligent assembly system with sensor-based online monitoring
 img: assets/img/research1.png
-importance: 1
-category: research
+importance: 3
+category: undergraduate
 ---
 
 ## Overview

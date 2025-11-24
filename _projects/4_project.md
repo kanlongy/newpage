@@ -3,8 +3,8 @@ layout: page
 title: ORB-SLAM3 on Physical Robots using ROS2
 description: Modernized SLAM framework deployment on diverse robotic platforms
 img: assets/img/slam-robots.jpg
-importance: 4
-category: coursework
+importance: 5
+category: graduate
 ---
 
 ## Overview

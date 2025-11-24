@@ -4,7 +4,7 @@ title: Si Piezosensor for MEMS Micromirror Angle Control
 description: MEMS sensor design and fabrication at Tohoku University
 img: assets/img/research2.png
 importance: 2
-category: research
+category: undergraduate
 related_publications: false
 ---
 
