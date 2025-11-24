@@ -393,25 +393,19 @@ ninja.data = [{
           section: "News",},{id: "news-started-my-master-s-program-in-mechanical-engineering-robotics-track-at-carnegie-mellon-university-mortar-board",
           title: 'Started my Master’s program in Mechanical Engineering (Robotics Track) at Carnegie Mellon University!...',
           description: "",
-          section: "News",},{id: "news-successfully-completed-autonomous-tunnel-inspection-demonstration-in-fukushima-japan-for-toprise-co-ltd-achieved-3d-reconstruction-with-accuracy-amp-lt-5cm",
-          title: 'Successfully completed autonomous tunnel inspection demonstration in Fukushima, Japan for TOPRISE CO., LTD....',
-          description: "",
           section: "News",},{id: "news-autonomous-tunnel-inspection-in-fukushima-japan",
           title: 'Autonomous Tunnel Inspection in Fukushima, Japan',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/newpage/news/announcement_6/";
+              window.location.href = "/newpage/news/announcement_3/";
             },},{id: "news-paper-accepted-to-icra-2025-workshop-on-construction-robotics-adaptive-planning-framework-for-uav-based-surface-inspection-in-partially-unknown-indoor-environments",
           title: 'Paper accepted to ICRA 2025 Workshop on Construction Robotics! “Adaptive Planning Framework for...',
-          description: "",
-          section: "News",},{id: "news-delivered-production-uav-system-to-toprise-co-ltd-our-work-was-featured-on-japanese-national-television-rocket",
-          title: 'Delivered production UAV system to TOPRISE CO., LTD. Our work was featured on...',
           description: "",
           section: "News",},{id: "news-production-uav-system-delivered-amp-featured-on-japanese-national-tv",
           title: 'Production UAV System Delivered &amp;amp; Featured on Japanese National TV',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/newpage/news/announcement_7/";
+              window.location.href = "/newpage/news/announcement_1/";
             },},{id: "projects-assembly-mechanism-with-multi-dof-self-optimization",
           title: 'Assembly Mechanism with Multi-DOF Self-Optimization',
           description: "Intelligent assembly system with sensor-based online monitoring",
