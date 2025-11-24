@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-06-01
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Delivered production UAV system to TOPRISE CO., LTD. Our work was featured on Japanese national television! :rocket:

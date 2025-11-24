@@ -1,81 +1,107 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Si Piezosensor for MEMS Micromirror Angle Control
+description: MEMS sensor design and fabrication at Tohoku University
+img: assets/img/research2.png
 importance: 2
-category: work
-giscus_comments: true
+category: research
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Period:** Apr. 2023 - Aug. 2023  
+**Institution:** S. Tanaka Laboratory, Tohoku University  
+**Location:** Sendai, Japan  
+**Type:** Undergraduate Research  
+**Supervisors:** Prof. Shuji Tanaka & Assist. Prof. Andrea Vergara
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
+
+## Introduction
+
+MEMS (Micro-Electro-Mechanical Systems) micromirrors are critical components in optical applications such as laser scanning displays, LiDAR systems, and biomedical imaging. Two-dimensional (2D) piezoelectric micromirrors require precise angle control on both axes, but the slow axis often lacks effective feedback sensing due to mechanical design constraints.
+
+**Project Objective:** Design and fabricate an integrated Si piezoresistive angle sensor for the slow axis of a 2D piezoelectric micromirror to enable closed-loop feedback control and improve positioning accuracy.
+
+**Impact:** This research contributes to the development of high-precision optical MEMS devices with applications in autonomous vehicles (LiDAR), medical imaging (endoscopy), and augmented reality displays.
+
+**Keywords:** MEMS, Piezoresistors, Micromirror, Sensor Design, Finite Element Analysis, Fabrication
+
+---
+
+## Methods
+
+### Sensor Design
+
+I designed a piezoresistive angle sensor structure specifically for the slow axis of the 2D piezoelectric micromirror:
+
+**Design Approach:**
+
+- Integrated Si piezoresistors at the hinge locations where mechanical stress is maximized during mirror rotation
+- Optimized sensor geometry to balance sensitivity and mechanical robustness
+- Designed two prototype structures: cantilever and meandering configurations for comparative analysis
+
+**Finite Element Analysis (FEA):**
+
+- Performed stress distribution analysis using COMSOL Multiphysics
+- Simulated piezoresistive output under various deflection angles
+- Validated sensor placement and geometry optimization
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research2-dt.gif" title="FEA simulation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Finite element analysis simulation showing stress distribution during mirror deflection
 </div>
+
+### Fabrication Process
+
+I gained hands-on experience with the complete MEMS fabrication workflow at Tohoku University's cleanroom facility:
+
+**Silicon-on-Insulator (SOI) Wafer Processing:**
+
+1. **Deposition**: Thin-film metal deposition for electrical contacts
+2. **Photolithography**: UV exposure and pattern transfer using photoresist
+3. **Doping**: Boron diffusion to create piezoresistive regions
+4. **Etching**: Deep reactive ion etching (DRIE) to define device structure
+5. **Dicing**: Wafer separation into individual device chips
+6. **Wire Bonding**: Electrical connection to package pins
+7. **Packaging**: Device encapsulation and protection
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research2.png" title="Fabricated MEMS devices" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Fabricated MEMS devices showing cantilever and meandering piezoresistor structures
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Results
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Device Characterization
 
-{% raw %}
+Successfully fabricated and characterized multiple prototype devices:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+**Key Findings:**
 
-{% endraw %}
+- Piezoresistive sensors successfully detected angular deflection of the slow axis
+- Output signal showed good correlation with simulation predictions
+- Meandering structure demonstrated enhanced sensitivity compared to simple cantilever design
+- Sensor integration did not significantly impact mirror mechanical performance
+
+---
+
+## Key Achievements
+
+- Novel piezoresistive sensor design for slow-axis angle detection
+- Complete hands-on MEMS fabrication experience from design to testing
+- Validation of sensor performance through experimental characterization
+- Enhanced understanding of the relationship between mechanical design and sensor sensitivity
+
+**Technical Skills Gained:** MEMS Design, Finite Element Analysis (COMSOL), Cleanroom Fabrication, Photolithography, Thin-Film Deposition, Wire Bonding, Device Characterization

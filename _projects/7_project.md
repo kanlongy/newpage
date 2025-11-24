@@ -1,81 +1,151 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+title: DDPM-AFHQ - Denoising Diffusion Probabilistic Models
+description: End-to-end diffusion model implementation on AFHQ dataset
+img: assets/img/ddpm_forward.png
+importance: 7
+category: personal
+github: https://github.com/kanlongy/DDPM_AFHQ.git
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Period:** Jun. 2025 - Aug. 2025  
+**Institution:** Carnegie Mellon University  
+**Location:** Pittsburgh, USA  
+**Type:** Personal Project
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
+
+## Introduction
+
+This project implements a full **Denoising Diffusion Probabilistic Model (DDPM)** using the AFHQ dataset (cats subset). The work follows the modern diffusion modeling pipeline, covering the **forward process**, **reverse denoising process**, **cosine noise schedule**, **U-Net denoiser**, **training with L1 noise prediction loss**, and **visualization of both forward and backward diffusion**. All training experiments were completed on an A100 GPU.
+
+**Keywords:** Generative Models, Diffusion Models, Computer Vision, U-Net Implementation
+
+[💻 GitHub Repository](https://github.com/kanlongy/DDPM_AFHQ.git)
+
+---
+
+## Diffusion Forward & Reverse Processes
+
+The forward process gradually adds Gaussian noise:
+
+$$
+x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t}\epsilon, \qquad \epsilon \sim \mathcal{N}(0,I)
+$$
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/ddpm_forward_f.png" title="Forward diffusion formulation" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The reverse process uses the U-Net to predict $$\epsilon_\theta(x_t,t)$$ and reconstruct $$x_0$$ through the posterior mean:
+
+$$
+\tilde{\mu}_t =
+\frac{\sqrt{\alpha_t}(1-\bar{\alpha}_{t-1})}{1-\bar{\alpha}_t} x_t
++
+\frac{\sqrt{\bar{\alpha}_{t-1}}(1-\alpha_t)}{1-\bar{\alpha}_t} \hat{x}_0
+$$
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ddpm_backward_f.png" title="Reverse diffusion formulation" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+### Forward & Reverse Diffusion Visualization
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ddpm_forward.png" title="Forward diffusion process" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ddpm_backward.png" title="Reverse diffusion process" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Left: Forward diffusion process (noise increases gradually). Right: Reverse diffusion process (model reconstructs from noise).
+</div>
+
+---
+
+## U-Net Noise Predictor
+
+A lightweight U-Net was implemented with:
+
+- Downsampling/upsampling blocks
+- Skip connections
+- GroupNorm + SiLU
+- Time embedding injected into each residual block
+- Middle-layer attention at low resolution
+
+This network predicts the added noise $$\epsilon_\theta(x_t,t)$$, enabling reconstruction of $$x_0$$.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/ddpm_unet.jpeg" title="U-Net architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    U-Net architecture for noise prediction
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Training Pipeline & Configuration
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+**Objective:**
+
+$$
+\mathcal{L} = \| \epsilon - \epsilon_\theta(x_t,t) \|_1
+$$
+
+**Setup:**
+
+- Dataset: AFHQ (cats)
+- Timesteps: T = 50
+- Optimizer: AdamW (1e-3)
+- Batch size: 32
+- Cosine noise schedule (Nichol & Dhariwal 2021)
+- Hardware: Google Colab A100
+
+---
+
+## Results
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ddpm_training_loss.png" title="Training loss curve" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Training loss curve showing convergence over 10k steps
+</div>
 
-{% endraw %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/ddpm_fid.png" title="FID progression" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    FID (Fréchet Inception Distance) progression over training steps
+</div>
+
+---
+
+## My Role & Contributions
+
+As the sole developer, I:
+
+- Implemented the full forward diffusion process
+- Implemented reverse process sampling (`p_sample`, `p_sample_loop`, `sample`)
+- Built the U-Net noise prediction model
+- Engineered full training pipeline and L1 noise prediction loss
+- Logged FID and produced visualizations (forward, backward, final samples)
+- Completed full 10k-step training and evaluation
+- Extracted and documented all results shown above
+
+This project refined my understanding of variational inference, generative modeling, and the finer dynamics of diffusion processes.
