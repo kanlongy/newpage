@@ -2,96 +2,65 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Kanlong Ye
+    - name: Email
+      value: kanlongy@andrew.cmu.edu
     - name: Languages
-      value: English, German
+      value: Chinese (Native), English (Fluent), Japanese (Fluent)
+    - name: Location
+      value: Pittsburgh, Pennsylvania, USA
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Mechanical Engineering - Research (Robotics Track)
+      institution: Carnegie Mellon University, Pittsburgh, USA
+      year: 2024 - 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "GPA: 4.0/4.0"
+        - Focus on robotics, machine learning, and autonomous systems
+    - title: B.E. in Mechanical Design & Manufacturing and Their Automation (Japanese Intensive)
+      institution: Dalian University of Technology, Dalian, China
+      year: 2019 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 3.7/4.0"
+        - Graduated with distinction
+    - title: Exchange Student in Mechanical and Aerospace Engineering
+      institution: Tohoku University, Sendai, Japan
+      year: 2022 - 2023
+      description:
+        - MEMS fabrication and sensor design research
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: CERLAB, Carnegie Mellon University
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Implemented LSTM-PPO architecture for wind-resilient UAV RL-control, modeling various wind fields in Gazebo/Isaac Sim
+        - Contributed to CERLAB UAV Autonomy stack in ROS, Gazebo, and Isaac Sim with dynamic obstacle removal integration
+        - Built custom LiDAR-based UAV platform for real tunnel inspection, achieving 3D reconstruction accuracy < 5cm
+    - title: Software Engineer Intern
+      institution: Perflection AI
+      year: May 2025 - Aug 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Benchmarked vision-language models (Qwen2.5-VL, Tarsier, GPT-4o, Gemini 2.5 Pro) for golf coaching applications
+        - Designed prompt engineering strategies for personalized coaching feedback
+        - Incorporated key frame analysis and biomechanical metrics into feedback pipeline
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - "C/C++, Python, MATLAB, Git, JavaScript"
+    - title: Frameworks & Libraries
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - "PyTorch, NumPy, OpenCV, ROS/ROS2"
+    - title: Robotics & AI
+      items:
+        - "Path Planning, SLAM, Object Detection, Reinforcement Learning, LLM, VLM"
+    - title: Software & Tools
+      items:
+        - "Isaac Sim, Gazebo, MuJoCo, AutoCAD, SolidWorks, Ansys, Wandb"
