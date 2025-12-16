@@ -276,6 +276,17 @@ ninja.data = [{
             window.location.href = "/newpage/blog/2022/giscus-comments/";
           
         },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
       },{id: "post-a-post-with-redirect",
         
           title: "a post with redirect",
@@ -399,6 +410,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/newpage/news/announcement_1/";
+            },},{id: "projects-textual-attributes-for-speech-understanding-with-llms",
+          title: 'Textual Attributes for Speech Understanding with LLMs',
+          description: "Training-free pipeline converting speech to textual attributes for LLM reasoning",
+          section: "Projects",handler: () => {
+              window.location.href = "/newpage/projects/10_project/";
+            },},{id: "projects-rank-supervised-sku-fingerprints-for-low-latency-generative-visual-search",
+          title: 'Rank-Supervised SKU Fingerprints for Low-Latency Generative Visual Search',
+          description: "Production-friendly fashion retrieval with unified image-text embedding and diffusion augmentation",
+          section: "Projects",handler: () => {
+              window.location.href = "/newpage/projects/11_project/";
             },},{id: "projects-assembly-mechanism-with-multi-dof-self-optimization",
           title: 'Assembly Mechanism with Multi-DOF Self-Optimization',
           description: "Intelligent assembly system with sensor-based online monitoring",
