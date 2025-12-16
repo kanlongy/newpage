@@ -410,6 +410,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/newpage/news/announcement_1/";
+            },},{id: "news-llm-poster-symposium-full-marks-achievement",
+          title: 'LLM Poster Symposium - Full Marks Achievement',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/newpage/news/announcement_6/";
             },},{id: "projects-textual-attributes-for-speech-understanding-with-llms",
           title: 'Textual Attributes for Speech Understanding with LLMs',
           description: "Training-free pipeline converting speech to textual attributes for LLM reasoning",
