@@ -100,13 +100,6 @@ Visual search in e-commerce requires balancing retrieval accuracy with productio
 
 We evaluated image-based retrieval on DeepFashion2:
 
-| Method | Recall@1 | Recall@10 | Recall@50 | Latency (ms) |
-|--------|----------|-----------|-----------|--------------|
-| CLIP (Zero-shot) | 42.3% | 61.7% | 75.2% | 8.2 |
-| FashionCLIP | 51.8% | 70.4% | 82.1% | 8.5 |
-| Composed Image Retrieval | 58.2% | 76.3% | 86.4% | 45.3 |
-| **Ours** | **63.7%** | **79.8%** | **89.2%** | **9.1** |
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/sku-image-retrieval.png" title="Image-to-SKU Results" class="img-fluid rounded z-depth-1" %}
@@ -120,11 +113,6 @@ We evaluated image-based retrieval on DeepFashion2:
 
 Our unified embedding space enables seamless text-to-image retrieval:
 
-| Query Type | Recall@1 | Recall@10 |
-|------------|----------|-----------|
-| Image → SKU | 63.7% | 79.8% |
-| Text → SKU | 48.2% | 68.4% |
-| Image + Text → SKU | 67.3% | 82.1% |
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -161,27 +149,6 @@ Our unified embedding space enables seamless text-to-image retrieval:
 <div class="caption">
     Single query retrieval example: query image (left) and top-K retrieved SKUs ranked by similarity
 </div>
-
----
-
-## Ablation Studies
-
-### Impact of Augmentation Strategy
-
-| Augmentation | Recall@1 | Recall@10 |
-|--------------|----------|-----------|
-| None | 55.3% | 72.1% |
-| Traditional (flip, crop, color) | 57.8% | 74.6% |
-| Stable Diffusion (random) | 60.2% | 76.9% |
-| **SD + LoRA Multi-view** | **63.7%** | **79.8%** |
-
-### Impact of Loss Function
-
-| Loss | Recall@1 | Recall@10 |
-|------|----------|-----------|
-| InfoNCE | 58.4% | 75.2% |
-| Triplet | 59.1% | 75.8% |
-| **Rank-Supervised Contrastive** | **63.7%** | **79.8%** |
 
 ---
 

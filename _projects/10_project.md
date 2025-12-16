@@ -97,11 +97,6 @@ The benchmark includes:
 
 We evaluated our method against state-of-the-art speech-language models on Dynamic-SUPERB core tasks:
 
-| Method | Intent Classification | Emotion Recognition | Speaker Identification | Average |
-|--------|----------------------|---------------------|----------------------|---------|
-| Whisper-LLaMA | 62.3% | 54.7% | 71.2% | 62.7% |
-| Qwen2-Audio | 68.1% | 58.9% | 73.5% | 66.8% |
-| **Ours** | **72.8%** | **63.2%** | **78.4%** | **71.5%** |
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -127,14 +122,6 @@ We evaluated our method against state-of-the-art speech-language models on Dynam
 ---
 
 ## Ablation Studies
-
-| Configuration | Accuracy |
-|---------------|----------|
-| Full Model (All Attributes) | **71.5%** |
-| w/o Prosodic Attributes | 63.0% |
-| w/o Speaker Attributes | 65.3% |
-| w/o Semantic Attributes | 42.1% |
-| Semantic Only (Baseline) | 58.7% |
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
