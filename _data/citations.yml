@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-01-05'
+  last_updated: '2026-01-09'
 papers:
+  gqZR5jYAAAAJ:u-x6o8ySG0sC:
+    citations: 0
+    title: Adaptive Planning Framework for UAV-Based Surface Inspection in Partially Unknown Indoor Environments
+    year: '2025'
   gqZR5jYAAAAJ:u5HHmVD_uO8C:
     citations: 9
     title: 'LV-DOT: LiDAR-visual dynamic obstacle detection and tracking for autonomous robot navigation'
