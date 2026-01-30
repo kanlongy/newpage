@@ -450,9 +450,9 @@ ninja.data = [{
           description: "LQR-based trajectory tracking with dynamic path replanning",
           section: "Projects",handler: () => {
               window.location.href = "/newpage/projects/5_project/";
-            },},{id: "projects-windy-navrl-wind-resilient-rl-framework-for-uav-navigation",
-          title: 'Windy-NavRL - Wind-resilient RL Framework for UAV Navigation',
-          description: "Transformer-PPO architecture for robust UAV navigation under wind disturbances",
+            },},{id: "projects-windyrl",
+          title: 'WindyRL',
+          description: "Temporal Reinforcement Learning for Vision-Based UAV Navigation in Windy Environments",
           section: "Projects",handler: () => {
               window.location.href = "/newpage/projects/6_project/";
             },},{id: "projects-ddpm-afhq-denoising-diffusion-probabilistic-models",
